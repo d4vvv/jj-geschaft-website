@@ -7,7 +7,7 @@ export function Footer() {
       <div className='container flex flex-col items-center gap-4 px-4 py-8 md:flex-row md:justify-between md:gap-0 max-w-none'>
         <div className='flex items-center space-x-2'>
           <Building2 className='h-6 w-6' />
-          <span className='text-xl font-bold'>Premium Nieruchomości</span>
+          <span className='text-xl font-bold'>JJ Geschaft</span>
         </div>
         <nav className='flex flex-col items-center gap-4 md:flex-row md:gap-6'>
           <Link
@@ -21,8 +21,7 @@ export function Footer() {
           </Link>
         </nav>
         <div className='text-sm text-muted-foreground'>
-          © {new Date().getFullYear()} Premium Nieruchomości. Wszelkie prawa
-          zastrzeżone.
+          © {new Date().getFullYear()} JJ Geschaft. Wszelkie prawa zastrzeżone.
         </div>
       </div>
     </footer>

@@ -19,7 +19,7 @@ export function Navbar() {
       <div className='container flex h-16 items-center justify-between px-4 max-w-none'>
         <Link href='/' className='flex items-center space-x-2'>
           <Building2 className='h-6 w-6' />
-          <span className='text-xl font-bold'>Premium Nieruchomości</span>
+          <span className='text-xl font-bold'>JJ Geschaft</span>
         </Link>
         <nav className='hidden md:flex md:items-center md:space-x-6'>
           {routes.map(route => (

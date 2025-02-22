@@ -1,17 +1,21 @@
 // import { Hero } from '@/components/Hero'
 // import { LandingPage } from '@/components/LandingPage'
 import { Hero } from '@/components/hero'
-import { LandingPage } from '@/components/landing-page'
 import { OurOffer } from '@/components/our-offer'
+import { PriceSection } from '@/components/price-section'
+import { StoryblokPage } from '@/components/storyblok-page'
+import { WhySection } from '@/components/why-section'
 import { apiPlugin, storyblokInit } from '@storyblok/react/rsc'
 
 export const getStoryblokApi = storyblokInit({
   accessToken: process.env.STORYBLOK_TOKEN,
   use: [apiPlugin],
   components: {
-    page: LandingPage,
+    page: StoryblokPage,
     hero: Hero,
     ourOffer: OurOffer,
+    whySection: WhySection,
+    priceSection: PriceSection,
   },
   enableFallbackComponent: true,
 })

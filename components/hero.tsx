@@ -15,7 +15,6 @@ interface HeroProps {
 export const Hero: FC<HeroProps> = ({
   blok: { header, heroImage, description },
 }) => {
-  console.log({ header, heroImage, description })
   return (
     <section className='relative h-[600px] w-full'>
       <div className='absolute inset-0'>

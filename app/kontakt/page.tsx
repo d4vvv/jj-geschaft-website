@@ -1,5 +1,10 @@
 import { getStoryblokApi } from '@/lib/storyblok'
 import { StoryblokStory } from '@storyblok/react/rsc'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Kontakt',
+}
 
 const fetchContactPage = async () => {
   const client = getStoryblokApi()

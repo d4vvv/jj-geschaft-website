@@ -1,5 +1,10 @@
 import { getStoryblokApi } from '@/lib/storyblok'
 import { StoryblokStory } from '@storyblok/react/rsc'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Dlaczego warto?',
+}
 
 const fetchWhyPage = async () => {
   const client = getStoryblokApi()

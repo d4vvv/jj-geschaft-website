@@ -9,8 +9,11 @@ import { StoryblokProvider } from '@/components/storyblok-provider'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'JJ Geschaft',
-  description: 'Znajdź swoje wymarzone mieszkanie',
+  title: {
+    template: '%s | Immosystem',
+    default: 'Immosystem',
+  },
+  description: 'Immosystem - Znajdź swoje wymarzone mieszkanie w Wiedniu',
 }
 
 export default function RootLayout({

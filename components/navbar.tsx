@@ -1,10 +1,9 @@
 'use client'
 
-import Link from 'next/link'
-import { Building2 } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
 import { Menu } from 'lucide-react'
+import Link from 'next/link'
 
 const routes = [
   { href: '/', label: 'Strona główna' },
@@ -18,8 +17,7 @@ export function Navbar() {
     <header className='border-b w-full'>
       <div className='container flex h-16 items-center justify-between px-4 max-w-none'>
         <Link href='/' className='flex items-center space-x-2'>
-          <Building2 className='h-6 w-6' />
-          <span className='text-xl font-bold'>JJ Geschaft</span>
+          <span className='text-xl font-bold'>Immosystem</span>
         </Link>
         <nav className='hidden md:flex md:items-center md:space-x-6'>
           {routes.map(route => (

@@ -1,7 +1,7 @@
 import { getStoryblokApi } from '@/lib/storyblok'
 import { StoryblokStory } from '@storyblok/react/rsc'
 
-const fetchLandingPage = async () => {
+const fetchWhyPage = async () => {
   const client = getStoryblokApi()
   const response = await client.getStory('why', {
     version: 'draft',
@@ -11,7 +11,7 @@ const fetchLandingPage = async () => {
 }
 
 export default async function WhyUsPage() {
-  const story = await fetchLandingPage()
+  const story = await fetchWhyPage()
 
   return <StoryblokStory story={story} />
 }

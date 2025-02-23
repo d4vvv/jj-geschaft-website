@@ -25,7 +25,7 @@ export const WhySection: FC<WhySectionProps> = ({
       <h1 className='text-4xl font-bold tracking-tight sm:text-5xl text-center mb-16 sm:text-start'>
         {header}
       </h1>
-      <div className='gap-8 columns-1 md:columns-2'>
+      <div className='gap-4 grid md:gap-8 md:grid-cols-2'>
         {whyBlocks.map(whyBlock => (
           <WhyCard
             key={whyBlock._uid}

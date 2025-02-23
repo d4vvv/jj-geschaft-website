@@ -10,7 +10,7 @@ export const WhyCard: React.FC<WhyCardProps> = ({
   icon,
 }) => {
   return (
-    <div className='flex flex-col items-center text-center px-8 py-16 bg-neutral-100 rounded-lg break-inside-avoid-column mb-4 md:mb-8'>
+    <div className='flex flex-col items-center text-center px-8 py-16 bg-neutral-100 rounded-lg break-inside-avoid-column justify-center'>
       <div className='rounded-lg bg-primary/20 h-24 w-24 flex justify-center items-center mb-4'>
         {icon}
       </div>

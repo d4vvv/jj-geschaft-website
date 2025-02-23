@@ -1,5 +1,6 @@
-import { ISbRichtext, renderRichText } from '@storyblok/react'
+import { ISbRichtext } from '@storyblok/react'
 import { FC } from 'react'
+import { RichText } from './ui/richtext'
 
 interface PriceSectionProps {
   blok: {
@@ -17,12 +18,7 @@ export const PriceSection: FC<PriceSectionProps> = ({
         {header}
       </h2>
       <div className='mb-8'>TABELKA</div>
-      <div
-        className='[&>*]:mb-4'
-        dangerouslySetInnerHTML={{
-          __html: renderRichText(text) as string,
-        }}
-      ></div>
+      <RichText richText={text} />
     </div>
   )
 }

@@ -1,5 +1,4 @@
-// import { Hero } from '@/components/Hero'
-// import { LandingPage } from '@/components/LandingPage'
+import { FAQSection } from '@/components/faq-section'
 import { Hero } from '@/components/hero'
 import { OurOffer } from '@/components/our-offer'
 import { PriceSection } from '@/components/price-section'
@@ -16,6 +15,7 @@ export const getStoryblokApi = storyblokInit({
     ourOffer: OurOffer,
     whySection: WhySection,
     priceSection: PriceSection,
+    faqSection: FAQSection,
   },
   enableFallbackComponent: true,
 })

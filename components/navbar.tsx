@@ -1,7 +1,12 @@
 'use client'
 
 import { Button } from '@/components/ui/button'
-import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
+import {
+  Sheet,
+  SheetClose,
+  SheetContent,
+  SheetTrigger,
+} from '@/components/ui/sheet'
 import { Menu } from 'lucide-react'
 import Link from 'next/link'
 
@@ -39,13 +44,15 @@ export function Navbar() {
           <SheetContent side='right'>
             <nav className='flex flex-col space-y-4'>
               {routes.map(route => (
-                <Link
-                  key={route.href}
-                  href={route.href}
-                  className='text-sm font-medium transition-colors hover:text-primary'
-                >
-                  {route.label}
-                </Link>
+                <SheetClose key={route.href} asChild>
+                  <Link
+                    key={route.href}
+                    href={route.href}
+                    className='text-sm font-medium transition-colors hover:text-primary'
+                  >
+                    {route.label}
+                  </Link>
+                </SheetClose>
               ))}
             </nav>
           </SheetContent>
